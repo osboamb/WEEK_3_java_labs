@@ -4,13 +4,30 @@ public class Employee {
     private String department;
     private String position; 
 
-//CONSTRUCTOR
+//CONSTRUCTOR 1
     public Employee(String inName, int inIdNumber, String inDepartment, String inPosition) {
         name = inName;
         idNumber = inIdNumber;
         department = inDepartment;
         position = inPosition;
     }
+
+//CONSTRUCTOR 2 
+    public Employee(String inName, int inIdNumber) {
+        name = inName;
+        idNumber = inIdNumber;
+        department = "";
+        position = "";
+    }
+
+//CONSTRUCTOR 3 
+    public Employee() {
+        name = "";
+        idNumber = 0;
+        department = "";
+        position = "";
+    }
+
 
 //GETTERS
 
