@@ -1,17 +1,20 @@
 public class RoomCarpet {
-    float costPerArea;
-    RoomDimension room1 = new RoomDimension(10, 10);
+    private RoomDimension size;
+    private double carpetCost;
 
 //CONTRUCTOR
-    public RoomCarpet(float inCostPerArea) {
-        costPerArea = inCostPerArea;
-    }
+    public RoomCarpet(RoomDimension inSize, double inCarpetCost) {
+        size = inSize;
+        carpetCost = inCarpetCost;
+    }  
 
 //METHOD
-    public float calcCost() {
-        return room1.area() * cost
+    public double getTotalCost() {
+        return size.getArea() * carpetCost;
     }
 
 //TO STRING 
-    public String toString(){}
+    public String toString(){
+        return "Area " + size.getArea() + "/t Cost per square meter: " + carpetCost + "/n";
+    }
 }

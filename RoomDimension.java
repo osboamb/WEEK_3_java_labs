@@ -1,14 +1,19 @@
 public class RoomDimension {
-    float length;
-    float width;
+    private double length;
+    private double width;
 
 //CONSTRUCTOR 
-    public RoomDimension(float inLength, float inWidth) {
+    public RoomDimension(double inLength, double inWidth) {
         length = inLength;
         width = inWidth;
     }
     
 //METHOD
-    public float area() {
+    public double getArea() {
         return length * width;
     }
+
+    public String toString() {
+        return "The room measures: " + length + " long by " + width + " wide.";
+    }
+}
