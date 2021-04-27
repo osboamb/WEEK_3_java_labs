@@ -14,6 +14,6 @@ public class room_test {
         RoomDimension mattsRoom = new RoomDimension( length, width);
         RoomCarpet mattsCarpet = new RoomCarpet(mattsRoom, price);
 
-        System.out.println("The cost of the carpet is £" + mattsCarpet.getTotalCost());
+        System.out.println("The cost of the carpet is £ " + mattsCarpet.getTotalCost());
     }
 }

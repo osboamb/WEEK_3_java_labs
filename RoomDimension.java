@@ -14,6 +14,6 @@ public class RoomDimension {
     }
 
     public String toString() {
-        return "The room measures: " + length + " long by " + width + " wide.";
+        return "The room measures: " + length + " long by " + width + " wide, with an area of " + getArea();
     }
 }
